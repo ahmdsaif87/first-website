@@ -3,31 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microsoft</title>
+    <title>MICROSOFT COMPANY</title>
+    <style>
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    <h1>MICROSOFT COMPANY</h1>
-    <div class="header">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">About Us</a></li>
-        </ul>
-    </div>
-    <div class="desc-company">
-        <img src="microsoft.png" alt="" width="300px" height="300px">
-        <p style="text-align: justify;">Microsoft adalah perusahaan teknologi global yang didirikan pada tahun 1975 oleh Bill Gates dan Paul Allen. Berbasis di Redmond, Washington, perusahaan ini terkenal karena sistem operasi Windows, perangkat lunak produktivitas seperti Microsoft Office, serta layanan cloud Azure. Microsoft juga memproduksi perangkat keras, termasuk konsol Xbox dan perangkat Surface. Perusahaan ini merupakan salah satu yang terbesar dan paling berpengaruh di dunia teknologi, berfokus pada inovasi di bidang komputasi awan, kecerdasan buatan, dan solusi perangkat lunak.</p>
-    </div>
-    <div class="service">
-        <h1>Layanan Kami</h1>
-        <p style="text-align: justify;">Microsoft menawarkan berbagai layanan, termasuk sistem operasi Windows, Microsoft Office, dan platform cloud Azure untuk komputasi awan dan AI. Mereka juga menyediakan Microsoft Teams untuk kolaborasi, GitHub untuk pengembang, serta produk perangkat keras seperti Surface dan Xbox. Selain itu, layanan bisnisnya mencakup Dynamics 365 dan LinkedIn untuk jejaring profesional.</p>
-    </div>    
-    <div class="footer">
-        <span>Nama bisnis : Microsoft<i class="fa-brands fa-microsoft"></i></span><br>
-        <span>Alamat bisnis : Lembayungan</span>
-    </div>
+    <header>
+        <section class="nama-bisnis">
+            <h1>MICROSOFT COMPANY</h1>
+        </section>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <section class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </section>
+    </header>
 
+    <main>
+        <section class="desc-company">
+            <img src="microsoft.png" alt="" width="300px" height="250px">
+            <p align="justify">Microsoft adalah perusahaan teknologi global yang didirikan pada tahun 1975 oleh Bill Gates dan Paul Allen. Berbasis di Redmond, Washington, perusahaan ini terkenal karena sistem operasi Windows, perangkat lunak produktivitas seperti Microsoft Office, serta layanan cloud Azure. Microsoft juga memproduksi perangkat keras, termasuk konsol Xbox dan perangkat Surface. Perusahaan ini merupakan salah satu yang terbesar dan paling berpengaruh di dunia teknologi, berfokus pada inovasi di bidang komputasi awan, kecerdasan buatan, dan solusi perangkat lunak.</p>
+        </section>
+
+        <section class="service">
+            <h1>Layanan Kami</h1>
+            <p align="justify">Microsoft menawarkan berbagai layanan, termasuk sistem operasi Windows, Microsoft Office, dan platform cloud Azure untuk komputasi awan dan AI. Mereka juga menyediakan Microsoft Teams untuk kolaborasi, GitHub untuk pengembang, serta produk perangkat keras seperti Surface dan Xbox. Selain itu, layanan bisnisnya mencakup Dynamics 365 dan LinkedIn untuk jejaring profesional.</p>
+            <table border="1" width="90%" height="50%" align="justify">
+                <thead align="center">
+                    <tr>
+                        <td><b>Nama Layanan</b></td>
+                        <td><b>Deskripsi</b></td>
+                        <td><b>Harga</b></td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Microsoft 365</td>
+                        <td>Microsoft 365 adalah rangkaian aplikasi produktivitas berbasis cloud, yang mencakup aplikasi populer seperti Word, Excel, PowerPoint, Outlook, dan Microsoft Teams. Layanan ini juga menyediakan penyimpanan cloud OneDrive dan alat kolaborasi bisnis.</td>
+                        <td>Rp 909.999/tahun</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Azure</td>
+                        <td>Azure adalah platform komputasi cloud yang menawarkan berbagai layanan, termasuk penyimpanan, analisis, jaringan, dan hosting aplikasi. Layanan ini digunakan oleh bisnis dan pengembang untuk membangun, mengelola, dan mengimplementasikan aplikasi di cloud. Harga: Bervariasi tergantung pada layanan dan skala penggunaan.</td>
+                        <td>Rp 70.000/bulan</td>
+                    </tr>
+                    <tr>
+                        <td>Xbox Game Pass</td>
+                        <td>Xbox Game Pass adalah layanan langganan game yang memungkinkan pengguna mengakses ratusan game di konsol Xbox dan PC, termasuk game baru dari studio-studio besar.</td>
+                        <td>Rp 135.000/bulan</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft One Drive</td>
+                        <td>OneDrive adalah layanan penyimpanan cloud dari Microsoft yang memungkinkan pengguna menyimpan, berbagi, dan menyinkronkan file di berbagai perangkat. OneDrive terintegrasi dengan Microsoft 365, memudahkan kolaborasi dan berbagi dokumen di cloud.</td>
+                        <td>Rp 26.999/bulan</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section><br><br>
+
+        <section class="contact-us">
+            <form action="" method="post">
+                <h1>Kontak Kami</h1>
+                <label for="">Nama</label>
+                <input type="text" placeholder="Masukkan nama..." required>
+                <br><br>
+                <label for="">Email</label>
+                <input type="text" placeholder="Masukkan email..." required>
+                <br><br>
+                <label for="">Pesan</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Masukkan pesan..." required></textarea>
+                <br><br>
+                <button>Submit</button>
+            </form>
+        </section>
+    </main><br><br>
+
+    <footer>
+        <section class="deskripsi">
+            <span>Nama bisnis : Microsoft<i class="fa-brands fa-microsoft"></i></span><br>
+            <span>Alamat bisnis : Mejasem</span>
+        </section>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </footer>
 </body>
 </html>
