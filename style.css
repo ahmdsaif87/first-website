@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:royalblue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 25px;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+.nama-bisnis {
+    margin: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.p {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.navbar li a {
+    font-size: 18px;
+    display: flex;
+    color: white;
+    margin: 10px;
+    right: 0;
+    left: 0;
+    text-decoration: none;
+}
+
+.navbar li {
+    margin-top: 20px;
+    justify-content: flex-end;
+    list-style: none;
+    transition: 0.3s;
+}
+
+.navbar li:hover {
+    text-decoration: underline;
+}
+
+.desc-company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    margin-right: 150px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+}
+
+.desc {
+    flex-direction: column;
+}
+
+.btn-selengkapnya {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    border: 1px solid black; 
+    text-decoration: none;
+}
+
+.btn-selengkapnya:hover {
+    text-decoration: underline;
+}
+
+.service {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    background-color: royalblue;
+    color: white;
+}
+
+.layanan {
+    margin-left: 85px;
+    margin-top: 40px;
+    margin-right: 30px;
+    width: 90%;
+}
+
+.table {
+    background-color: white;
+    color: black;
+    width: 90%;
+    margin: 0 auto; 
+    padding: 10px auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+    border-spacing: 0 10px;
+}
+
+.desc-card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    margin-top: 20px;
+}
+
+.card {
+    background-color: snow;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    height: 350px;
+    box-shadow: 30px 11px 16px 0px rgba(0,0,0,0.1);
+}
+
+.card img {
+    margin-bottom: 15px; 
+}
+
+.card:hover {
+    box-shadow: 35px 15px 25px 0px rgba(0,0,0,0.2);
+}
+
+td {
+    padding: 10px;
+}
+
+.contact-us {
+    margin-top: 80px;
+    margin-left: 85px;
+}
+
+footer {
+    margin-top: 50px;
+    margin-left: 85px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

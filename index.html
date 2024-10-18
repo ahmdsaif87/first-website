@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MICROSOFT COMPANY</title>
-    <style>
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <section class="nama-bisnis">
-            <h1>MICROSOFT COMPANY</h1>
+            <h1><b>MICROSOFT COMPANY</b></h1><hr>
+            <p class="p">Innovating for a brighter tomorrow</p>
         </section>
 
-        <section class="navbar">
-            <ul>
-                <li>Home</li>
-                <li>Contact</li>
-                <li>About</li>
-            </ul>
+        <section>
+            <div>
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
         </section>
     </header>
 
     <main>
         <section class="desc-company">
-            <img src="microsoft.png" alt="" width="300px" height="250px">
-            <p align="justify">Microsoft adalah perusahaan teknologi global yang didirikan pada tahun 1975 oleh Bill Gates dan Paul Allen. Berbasis di Redmond, Washington, perusahaan ini terkenal karena sistem operasi Windows, perangkat lunak produktivitas seperti Microsoft Office, serta layanan cloud Azure. Microsoft juga memproduksi perangkat keras, termasuk konsol Xbox dan perangkat Surface. Perusahaan ini merupakan salah satu yang terbesar dan paling berpengaruh di dunia teknologi, berfokus pada inovasi di bidang komputasi awan, kecerdasan buatan, dan solusi perangkat lunak.</p>
+            <div class="desc">
+                <h1>Welcome to Microsoft Family</h1><br>
+                <p align="left">Microsoft, didirikan pada 1975, adalah perusahaan teknologi global yang terkenal dengan Windows, Microsoft Office, dan Azure. Selain perangkat keras seperti Xbox dan Surface, Microsoft berfokus pada inovasi di komputasi awan, kecerdasan buatan, dan perangkat lunak.</p><br>
+                <a href="#" class="btn-selengkapnya">Selengkapnya</a>
+            </div>
+            <img src="microsoft.png" alt="" width="500px" height="350px">
         </section>
 
         <section class="service">
-            <h1>Layanan Kami</h1>
-            <p align="justify">Microsoft menawarkan berbagai layanan, termasuk sistem operasi Windows, Microsoft Office, dan platform cloud Azure untuk komputasi awan dan AI. Mereka juga menyediakan Microsoft Teams untuk kolaborasi, GitHub untuk pengembang, serta produk perangkat keras seperti Surface dan Xbox. Selain itu, layanan bisnisnya mencakup Dynamics 365 dan LinkedIn untuk jejaring profesional.</p>
-            <table border="1" width="90%" height="50%" align="justify">
+            <div class="layanan">
+                <h1>Layanan Kami</h1>
+                <p align="justify">Microsoft menawarkan berbagai layanan, termasuk sistem operasi Windows, Microsoft Office, dan platform cloud Azure untuk komputasi awan dan AI. Mereka juga menyediakan Microsoft Teams untuk kolaborasi, GitHub untuk pengembang, serta produk perangkat keras seperti Surface dan Xbox. Selain itu, layanan bisnisnya mencakup Dynamics 365 dan LinkedIn untuk jejaring profesional.</p>
+            </div>
+            <table class="table" border="1">
                 <thead align="center">
                     <tr>
                         <td><b>Nama Layanan</b></td>
@@ -67,6 +72,35 @@
                 </tbody>
             </table>
         </section><br><br>
+
+        <section> <!-- Product -->
+            <div class="desc-card">
+                <h1>Produk Kami</h1>
+                <P>Microsoft adalah perusahaan teknologi global yang terkenal dengan sistem operasi Windows, paket aplikasi produktivitas Microsoft Office, dan layanan komputasi awan Azure. Melalui Microsoft 365, pengguna dapat mengakses aplikasi Office beserta penyimpanan cloud OneDrive dan alat kolaborasi, menjadikannya pilihan utama untuk meningkatkan efisiensi dan produktivitas.</P>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="microsoft365.jpg" style="width: 150px;">
+                    <h1 class="">Mie Gacoan</h1>
+                    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, mollitia.</p>
+                </div>
+                <div class="card">
+                    <img src="onedrive.jpg" style="width: 150px;">
+                    <h1 class="">Mie Gacoan</h1>
+                    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, mollitia.</p>
+                </div>
+                <div class="card">
+                    <img src="xbox.jpg" style="width: 150px;">
+                    <h1 class="">Mie Gacoan</h1>
+                    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, mollitia.</p>
+                </div>
+                <div class="card">
+                    <img src="azure.jpg" style="width: 150px;">
+                    <h1 class="">Mie Gacoan</h1>
+                    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, mollitia.</p>
+                </div>
+            </div>
+        </section>        
 
         <section class="contact-us">
             <form action="" method="post">
