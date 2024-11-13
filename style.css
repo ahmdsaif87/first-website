@@ -54,22 +54,6 @@ nav {
     display: none;
 }
 
-/* Dropdown Menu */
-.dropdown-menu {
-    display: flex;
-    gap: 5%;
-    flex-direction: column;
-    font-size: 18px;
-    list-style-type: none;
-    font-weight: bold;
-    display: none;
-}
-
-.dropdown-menu li a {
-    color: white;
-    text-decoration: none;
-}
-
 /* Main Content */
 main {
     color: black;
@@ -89,7 +73,7 @@ main {
 }
 
 /* Button Styling */
-.btn-selengkapnya {
+.btn-more {
     padding: 10px 20px;
     border: 1px solid black;
     text-decoration: none;
@@ -97,7 +81,7 @@ main {
     transition: all 0.3s ease; 
 }
 
-.btn-selengkapnya:hover {
+.btn-more:hover {
     background: #393E46;
     color: white;
 }
@@ -259,10 +243,6 @@ footer {
     .navbar li {
         margin: 10px 0;
         text-align: center;
-    }
-
-    .dropdown-menu {
-        display: none;
     }
 
     .desc-company {
