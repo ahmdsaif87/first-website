@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); /* Import font */
 
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +8,13 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif; /* Mengatur font */
 }
 
-header {
+/* Navigation Bar */
+nav {
     width: 100vw;
-    background-color: royalblue;
+    background: #393E46;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -20,16 +22,12 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
-}
-
-.nama-bisnis {
-    margin: 0 20px;
+    z-index: 100; /* Posisi tetap di atas */
 }
 
 .navbar {
     list-style-type: none;
-    display: flex;
+    display: flex; /* Menampilkan navbar secara horizontal */
 }
 
 .navbar li {
@@ -45,50 +43,78 @@ header {
 }
 
 .navbar li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Efek hover */
 }
 
+/* Toggle Button for Mobile View */
+.btn-toggle {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: flex;
+    gap: 5%;
+    flex-direction: column;
+    font-size: 18px;
+    list-style-type: none;
+    font-weight: bold;
+    display: none;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content */
 main {
-    margin-top: 150px;
-    padding: 20px;
+    color: black;
 }
 
+/* Company Description Section */
 .desc-company {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
-    margin: 40px;
+    justify-content: space-between;
+    width: 90%; /* Perbaikan: width: 100% */
+    margin: 90px;
 }
 
+/* Button Styling */
 .btn-selengkapnya {
     padding: 10px 20px;
     border: 1px solid black;
     text-decoration: none;
     color: black;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Efek transisi */
 }
 
 .btn-selengkapnya:hover {
-    background-color: royalblue;
+    background: #393E46;
     color: white;
 }
 
+/* Service Section */
 .service {
-    background-color: royalblue;
+    background: #393E46;
     color: white;
     padding: 50px;
-    width: 100% 0;
+    width: 100%; /* Perbaikan: width: 100% */
     text-align: center;
 }
 
 .layanan {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
+/* Table Styling */
 .table {
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
     background-color: white;
     color: black;
@@ -101,11 +127,13 @@ main {
     border: 1px solid #ddd;
 }
 
+/* Product Section */
 .product {
     text-align: center;
     padding: 50px 0;
 }
 
+/* Card Container */
 .card-container {
     display: flex;
     justify-content: center;
@@ -127,13 +155,19 @@ main {
     height: 150px;
     object-fit: contain;
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Efek zoom saat hover */
 }
 
 .card:hover {
-    background-color: royalblue;
+    background: #393E46;
     color: white;
 }
 
+/* Contact Us Section */
 .contact-us {
     padding: 50px 20px;
     background-color: #f9f9f9;
@@ -160,7 +194,7 @@ main {
 
 .contact-us button {
     padding: 10px 20px;
-    background-color: royalblue;
+    background: #393E46;
     color: white;
     border: none;
     border-radius: 5px;
@@ -168,13 +202,85 @@ main {
 }
 
 .contact-us button:hover {
-    background-color: darkblue;
+    background: #393E46; /* Efek hover */
 }
 
+/* Footer */
 footer {
     width: 100%;
-    background-color: royalblue;
+    background: #393E46;
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .btn-toggle {
+        display: block; /* Tampilkan tombol toggle */
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #393E46;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 99;
+    }
+
+    .navbar.active {
+        display: flex; /* Navbar ditampilkan saat aktif */
+    }
+
+    .navbar li {
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .dropdown-menu {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+        background: #393E46;
+        display: block;
+    }
+
+    .desc-company, .service, .product, .contact-us, .card-container {
+        width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .table {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    .contact-us form {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
