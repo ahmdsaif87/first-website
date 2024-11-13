@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif; /* Mengatur font */
+    font-family: "Poppins", sans-serif; 
 }
 
 /* Navigation Bar */
@@ -22,12 +22,12 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100; /* Posisi tetap di atas */
+    z-index: 100; 
 }
 
 .navbar {
     list-style-type: none;
-    display: flex; /* Menampilkan navbar secara horizontal */
+    display: flex; 
 }
 
 .navbar li {
@@ -43,7 +43,7 @@ nav {
 }
 
 .navbar li a:hover {
-    text-decoration: underline; /* Efek hover */
+    text-decoration: underline; /
 }
 
 /* Toggle Button for Mobile View */
@@ -94,7 +94,7 @@ main {
     border: 1px solid black;
     text-decoration: none;
     color: black;
-    transition: all 0.3s ease; /* Efek transisi */
+    transition: all 0.3s ease; 
 }
 
 .btn-selengkapnya:hover {
@@ -143,8 +143,8 @@ main {
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding-bottom: 10px; /* Add space for better scrolling experience */
+    overflow-x: auto; 
+    padding-bottom: 10px; 
 }
 
 .card {
@@ -154,19 +154,19 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 250px;
-    flex: 0 0 auto; /* Prevent shrinking */
+    flex: 0 0 auto; 
 }
 
 .card img {
     width: 100%;
-    object-fit: contain; /* Keeps the full image visible without stretching */
+    object-fit: contain; 
     margin-bottom: 20px;
     transition: transform 0.3s ease;
 }
 
 
 .card:hover img {
-    transform: scale(1.1); /* Efek zoom saat hover */
+    transform: scale(1.1); 
 }
 
 .card:hover {
@@ -209,7 +209,7 @@ main {
 }
 
 .contact-us button:hover {
-    background: #393E46; /* Efek hover */
+    background: #393E46; 
 }
 
 /* Footer */
@@ -231,10 +231,10 @@ footer {
     }
 
     .btn-toggle {
-        display: block; /* Pastikan tombol ditampilkan */
+        display: block;
         position: absolute;
-        right: 15px; /* Atur posisi ke kanan */
-        top: 15px; /* Atur jarak dari atas */
+        right: 15px; 
+        top: 15px;
         color: white;
         font-size: 1.5rem;
         cursor: pointer;
@@ -252,7 +252,7 @@ footer {
     }
 
     .navbar.active {
-        display: flex; /* Navbar ditampilkan saat aktif */
+        display: flex;
         align-items: center;
     }
 
@@ -284,9 +284,13 @@ footer {
         justify-content: start;
     }
 
+    .desc-serv {
+        display: none;
+    }
+
     .card {
-        width: 100%; /* Make the card take full width on mobile */
-        max-width: 350px; /* Prevents the card from getting too large */
+        width: 100%; 
+        max-width: 350px; 
         margin: 10px auto;
     }
 
