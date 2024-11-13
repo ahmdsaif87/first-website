@@ -1,7 +1,8 @@
-console.log("Halo Dunia")
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.btn-toggle');
+    const navbar = document.querySelector('.navbar');
 
-
-document.querySelector('.btn-toggle').addEventListener('click', function() {
-document.querySelector('.navbar').classList.toggle('active');
+    toggleButton.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
 });
-
